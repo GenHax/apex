@@ -4,11 +4,24 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require("mongoose");
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+////////////////////////////////////////////////////////////////
+///******** Connection to mongoDB database ************/////////
+////////////////////////////////////////////////////////////////
+
+mongoose.connect('mongodb://localhost:27017/illuminati' , { useNewUrlParser: true });
+var db = mongoose.connection;
+db.once('open', function () {
+  console.log("Connection to MongoDB successful...");
+}).on('error', function (error) {
+  console.log("MongoDB connection error: ", error);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
