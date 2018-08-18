@@ -34,6 +34,10 @@ router.get("/diet_plan", function(req, res, next) {
     res.render('diet_plan.ejs');
 });
 
+router.get("/asha_list", function(req, res, next) {
+    res.render('asha_list.ejs');
+});
+
 
 
 router.get("/notify", function(req, res, next) {

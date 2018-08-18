@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Patient List</title>
+    <title>Ashaworker List</title>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" />
     <link rel="stylesheet" href="bower_components/jsgrid/dist/jsgrid.min.css" />
@@ -58,7 +58,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="patient_list">
                                 <i class="mdi mdi-layers"></i>
-                                <span class="menu-title"><b>Patient List</b></span>
+                                <span class="menu-title">Patient List</span>
                             </a>
                         </li>
 
@@ -79,7 +79,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="asha_list">
                                 <i class="mdi mdi-layers"></i>
-                                <span class="menu-title">Ashaworker List</span>
+                                <span class="menu-title"><b>Ashaworker List</b></span>
                             </a>
                         </li>
 
@@ -87,58 +87,40 @@
                 </nav>
 
                 <div class="content-wrapper">
-                    <h3 class="page-title">Patient List</h3>
+                    <h3 class="page-title">ASHAworker List</h3>
                     <div class="row mb-2">
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-body">
 
-                                    <form class="forms-sample">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Patient Name:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Age:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Education:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Occupation:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Contact No.:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Address:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Date of Conceiving:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Expected Delivery Date:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">No. of Children:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Complications:</label>
-                                            <input type="email" class="form-control p-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        </div>
+                                    <div class="table-responsive">
+                                        <table class="table center-aligned-table" id="table_id">
+                                            <thead>
+                                                <tr class="text-primary">
+                                                    <th>Id</th>
+                                                    <th>Ashaworker Name</th>
+                                                    <th>Contact No.</th>
+                                                    <th>Address</th>
+                                                    <th>Date of Birth</th>
+                                                    <th>Date of Joining</th>
+                                                    <th>Patient IDs</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="">
+                                                    <td>1</td>
+                                                    <td>sdfad sdvs</td>
+                                                    <td>6546654654</td>
+                                                    <td>sdhfkl asdhadsh aidjaj</td>
+                                                    <td>541555</td>
+                                                    <td>312312</td>
+                                                    <td>23442555</td>
 
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                    </form>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
