@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
     <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -35,12 +36,9 @@
                               <span class="navbar-toggler-icon"></span>
                             </button> -->
                 <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item nav-profile">
-                        <a class="nav-link" href="#">
-                            Profile
-                            <img src="images/profile.jpg" />
-                        </a>
-                    </li>
+                    <!-- Google translate dropdown -->
+                    <div id="google_translate_element"></div>
+
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
@@ -198,6 +196,17 @@
     <script src="js/hoverable-collapse.js"></script>
     <script src="js/misc.js"></script>
     <script src="js/patient_reg.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+
+        /////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////// For initializing the google translate dropdown////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////////////
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
 
 </body>
 
