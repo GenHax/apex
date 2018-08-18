@@ -36,4 +36,8 @@ router.get("/diet_plan", function(req, res, next) {
 
 
 
+router.get("/notify", function(req, res, next) {
+    res.render('notify.ejs');
+});
+
 module.exports = router;
