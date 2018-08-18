@@ -6,10 +6,12 @@ var patientModel = require('../models/patient');
 
 var ListAllPatients = function (req , res){
     // Patient listing funciton.
+    patientModel.find({}, function(err, docs) {
+        if (err) throw err;
+        console.log(docs);
+        res.json(docs);
+    });
 }
 
-var FindPatients = function (req , res){
-    // Patient finding function.
-}
 
-module.exports = { "ListAllPatients": ListAllPatients, "FindPatients": FindPatients };
+module.exports = { "ListAllPatients": ListAllPatients };

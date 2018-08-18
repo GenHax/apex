@@ -24,9 +24,6 @@ router.get('/workers-list', workers.ListAllWorkers);
 
 router.get('/patients-list', patients.ListAllPatients);
 
-router.get('/find-workers', workers.FindWorkers);
-
-router.get('/find-patients', patients.FindPatients);
 
 
 module.exports = router;
