@@ -5,6 +5,10 @@
 var express = require('express');
 var router = express.Router();
 
+var patientModel = require('../models/patient');
+var workerModel = require('../models/worker');
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('index');
@@ -23,7 +27,11 @@ router.get("/patient_registration", function(req, res, next) {
 });
 
 router.get("/patient_list", function(req, res, next) {
-    res.render('patient_list.ejs');
+    patientModel.find({}, function(err, docs) {
+        if (err) throw err;
+        console.log(docs);
+        res.render("patient_list", { "patients": docs });
+    });
 });
 
 router.get("/vaccination_list", function(req, res, next) {
@@ -35,7 +43,11 @@ router.get("/diet_plan", function(req, res, next) {
 });
 
 router.get("/asha_list", function(req, res, next) {
-    res.render('asha_list.ejs');
+    workerModel.find({}, function(err, docs) {
+        if (err) throw err;
+        console.log(docs);
+        res.render("asha_list", { "workers": docs });
+    });
 });
 
 

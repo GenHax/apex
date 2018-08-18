@@ -107,18 +107,32 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr class="">
-                                                    <td>1</td>
-                                                    <td>sdfad sdvs</td>
-                                                    <td>6546654654</td>
-                                                    <td>sdhfkl asdhadsh aidjaj</td>
-                                                    <td>541555</td>
-                                                    <td>312312</td>
-                                                    <td>23442555</td>
-
-                                                </tr>
-
-                                            </tbody>
+                                                <% for(var i=0; i < workers.length; i++) { %>
+                                                    <tr>
+                                                        <td>
+                                                            <%= i + 1 %>
+                                                        </td>
+                                                        <td>
+                                                            <%= workers[i].name %>
+                                                        </td>
+                                                        <td>
+                                                            <%= workers[i].contact %>
+                                                        </td>
+                                                        <td>
+                                                            <%= workers[i].address %>
+                                                        </td>
+                                                        <td>
+                                                            <%= workers[i].dob %>
+                                                        </td>
+                                                        <td>
+                                                            <%= workers[i].dateOfJoining %>
+                                                        </td>
+                                                        <td>
+                                                            <%= workers[i].patientIDs %>
+                                                        </td>
+                                                    </tr>
+                                                    <% } %>
+                                                </tbody>
                                         </table>
                                     </div>
                                 </div>

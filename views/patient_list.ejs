@@ -106,17 +106,26 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr class="">
-                                                    <td>1</td>
-                                                    <td>sdfad sdvs</td>
-                                                    <td>6546654654</td>
-                                                    <td>sdhfkl asdhadsh aidjaj</td>
-                                                    <td>541555</td>
-                                                    <td><a href="#" class="btn btn-primary btn-sm">Edit</a></td>
-
-                                                </tr>
-
-                                            </tbody>
+                                                <% for(var i=0; i < patients.length; i++) { %>
+                                                    <tr>
+                                                        <td>
+                                                            <%= i + 1 %>
+                                                        </td>
+                                                        <td>
+                                                            <%= patients[i].name %>
+                                                        </td>
+                                                        <td>
+                                                            <%= patients[i].contact %>
+                                                        </td>
+                                                        <td>
+                                                            <%= patients[i].address %>
+                                                        </td>
+                                                        <td>
+                                                            <%= patients[i].doc %>
+                                                        </td>
+                                                    </tr>
+                                                    <% } %>
+                                                </tbody>
                                         </table>
                                     </div>
                                 </div>
