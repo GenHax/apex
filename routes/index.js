@@ -30,7 +30,7 @@ router.get("/patient_list", function(req, res, next) {
     patientModel.find({}, function(err, docs) {
         if (err) throw err;
         console.log(docs);
-        res.render("patient_list", { "patients": docs });
+        res.render("patient_list.ejs", { "patients": docs });
     });
 });
 
@@ -46,7 +46,7 @@ router.get("/asha_list", function(req, res, next) {
     workerModel.find({}, function(err, docs) {
         if (err) throw err;
         console.log(docs);
-        res.render("asha_list", { "workers": docs });
+        res.render("asha_list.ejs", { "workers": docs });
     });
 });
 
