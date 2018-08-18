@@ -1,2 +1,5 @@
 # Not tracking the node_modules folder.
 node_modules
+
+# Not tracking the bower components folder
+bower_components
