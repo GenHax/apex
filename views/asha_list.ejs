@@ -12,6 +12,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
 
 </head>
 
@@ -21,8 +25,11 @@
 
         <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-left navbar-brand-wrapper">
-                <a class="navbar-brand brand-logo-mini" href="#"><i class="mdi mdi-cards-outline"></i></a>
-                <a class="navbar-brand brand-logo" href="/"><i class="mdi mdi-cards-outline"></i>PregaAssist</a>
+                <a class="navbar-brand brand-logo-mini" href="#">
+                    <i class="mdi mdi-cards-outline"></i>
+                </a>
+                <a class="navbar-brand brand-logo" href="/">
+                    <i class="mdi mdi-cards-outline"></i>PregaAssist</a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-self-stretch align-items-center">
                 <!-- <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
@@ -31,12 +38,13 @@
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item nav-profile">
                         <a class="nav-link" href="#">
-                                        Profile<img src="images/profile.jpg" />
+                            Profile
+                            <img src="images/profile.jpg" />
                         </a>
                     </li>
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-                              <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
         </nav>
@@ -50,36 +58,38 @@
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link" href="patient_registration">
-                                <i class="mdi mdi-layers"></i>
+                                <i class="fa fa-plus"></i>
                                 <span class="menu-title">New Patient</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="patient_list">
-                                <i class="mdi mdi-layers"></i>
+                                <i class="fa fa-address-book-o"></i>
                                 <span class="menu-title">Patient List</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="vaccination_list">
-                                <i class="mdi mdi-layers"></i>
+                                <i class="fas fa-syringe"></i>
                                 <span class="menu-title">Vaccination List</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="diet_plan">
-                                <i class="mdi mdi-layers"></i>
+                                <i class="fas fa-utensils"></i>
                                 <span class="menu-title">Diet Plan</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="asha_list">
-                                <i class="mdi mdi-layers"></i>
-                                <span class="menu-title"><b>Ashaworker List</b></span>
+                                <i class="fa fa-address-book-o"></i>
+                                <span class="menu-title">
+                                    <b>Asha worker List</b>
+                                </span>
                             </a>
                         </li>
 
@@ -87,7 +97,7 @@
                 </nav>
 
                 <div class="content-wrapper">
-                    <h3 class="page-title">ASHAworker List</h3>
+                    <h3 class="page-title">ASHA Worker List</h3>
                     <div class="row mb-2">
                         <div class="col-lg-12">
                             <div class="card">
@@ -132,7 +142,7 @@
                                                         </td>
                                                     </tr>
                                                     <% } %>
-                                                </tbody>
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -145,7 +155,7 @@
                 <footer class="footer">
                     <div class="container-fluid clearfix">
                         <span class="float-right">
-                                <a href="#">Illuminati</a> &copy; 2018
+                            <a href="#">Illuminati</a> &copy; 2018
                         </span>
                     </div>
                 </footer>
