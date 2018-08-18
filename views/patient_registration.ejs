@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>New Patient</title>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" />
+    <link rel="stylesheet" href="node_modules/jqvmap/dist/jqvmap.min.css" />
+    <link rel="stylesheet" href="node_modules/pwstabs/assets/jquery.pwstabs.min.css">
+    <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body class="sidebar-mini">
+    <div class=" container-scroller">
+
+        <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-left navbar-brand-wrapper">
+                <a class="navbar-brand brand-logo-mini" href="#"><i class="mdi mdi-cards-outline"></i></a>
+                <a class="navbar-brand brand-logo" href="/"><i class="mdi mdi-cards-outline"></i>PregaAssist</a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-self-stretch align-items-center">
+                <!-- <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
+                          <span class="navbar-toggler-icon"></span>
+                        </button> -->
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item nav-profile">
+                        <a class="nav-link" href="#">
+                                    Profile<img src="images/faces/face9.jpg" />
+                                </a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+            </div>
+        </nav>
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+
+            <div class="row row-offcanvas row-offcanvas-right">
+                <!-- Side Nav-->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="patient_registration">
+                                <i class="mdi mdi-layers"></i>
+                                <span class="menu-title">New Patient</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="patient_list">
+                                <i class="mdi mdi-layers"></i>
+                                <span class="menu-title">Patient List</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="vaccination_list">
+                                <i class="mdi mdi-layers"></i>
+                                <span class="menu-title">Vaccination List</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="diet_plan">
+                                <i class="mdi mdi-layers"></i>
+                                <span class="menu-title">Diet Plan</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="asha_list">
+                                <i class="mdi mdi-layers"></i>
+                                <span class="menu-title">Ashaworker List</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- partial -->
+                <div class="content-wrapper">
+                    <h3 class="page-title">New Patient Registration</h3>
+
+                    <!--wizard with validation-->
+                    <div class="row mb-4">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <form id="example-validation-form" action="#">
+                                        <div>
+                                            <h3>General Details</h3>
+                                            <section>
+                                                <label for="userName">Patient name *</label>
+                                                <input id="userName" name="userName" type="text" class="required">
+                                                <label for="password">Age *</label>
+                                                <input id="password" name="password" type="text" class="required">
+                                                <label for="confirm">Education *</label>
+                                                <input id="confirm" name="confirm" type="text" class="required">
+                                                <label for="confirm">Occupation *</label>
+                                                <input id="confirm" name="confirm" type="text" class="required">
+                                                <p>(*) Mandatory</p>
+                                            </section>
+                                            <h3>Contact Details</h3>
+                                            <section>
+                                                <label for="name">Contact no *</label>
+                                                <input id="name" name="name" type="text" class="required">
+                                                <label for="address">Address *</label>
+                                                <input id="address" name="address" type="text">
+                                                <label for="email">Email</label>
+                                                <input id="email" name="email" type="text" class="required email">
+                                                <p>(*) Mandatory</p>
+                                            </section>
+                                            <h3>Pregnancy Information</h3>
+                                            <section>
+                                                <label for="name">Date of Conceiving *</label>
+                                                <input id="name" name="name" type="text" class="required">
+                                                <label for="surname">Expected Delivery Date *</label>
+                                                <input id="surname" name="surname" type="text" class="required">
+                                                <label for="email">No. of Children *</label>
+                                                <input id="email" name="email" type="text" class="required email">
+                                                <label for="address">Complications (if any)</label>
+                                                <input id="address" name="address" type="text">
+                                                <label for="address">Remarks</label>
+                                                <input id="address" name="address" type="text">
+                                                <p>(*) Mandatory</p>
+                                            </section>
+                                            <h3>Other Medical Information</h3>
+                                            <section>
+                                                <label for="name">Blood Group *</label>
+                                                <input id="name" name="name" type="text" class="required">
+                                                <label for="surname">Height *</label>
+                                                <input id="surname" name="surname" type="text" class="required">
+                                                <label for="email">Weight *</label>
+                                                <input id="email" name="email" type="text" class="required email">
+                                                <label for="address">Allergy</label>
+                                                <input id="address" name="address" type="text">
+                                                <p>(*) Mandatory</p>
+                                            </section>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid clearfix">
+                        <span class="float-right">
+                          <a href="#">Illuminati</a> &copy; 2018
+                      </span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.steps/build/jquery.steps.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/sidebar-icon.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/sparkline.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/wizard.js"></script>
+</body>
+
+</html>

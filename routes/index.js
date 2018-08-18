@@ -14,8 +14,26 @@ router.get("/training", function(req, res, next) {
     res.render('training.ejs');
 });
 
-router.get("/vaccinations", function(req, res, next) {
-    res.render('vaccinations.ejs');
+router.get("/dashboard", function(req, res, next) {
+    res.render('dashboard.ejs');
 });
+
+router.get("/patient_registration", function(req, res, next) {
+    res.render('patient_registration.ejs');
+});
+
+router.get("/patient_list", function(req, res, next) {
+    res.render('patient_list.ejs');
+});
+
+router.get("/vaccination_list", function(req, res, next) {
+    res.render('vaccination_list.ejs');
+});
+
+router.get("/diet_plan", function(req, res, next) {
+    res.render('diet_plan.ejs');
+});
+
+
 
 module.exports = router;
