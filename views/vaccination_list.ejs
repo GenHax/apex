@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="node_modules/pwstabs/assets/jquery.pwstabs.min.css">
     <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <!-- STylesheet for Fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.png" />
 </head>
@@ -22,6 +22,7 @@
 
     <div class="container-scroller">
 
+        <!-- Top Nav -->
         <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-left navbar-brand-wrapper">
                 <a class="navbar-brand brand-logo-mini" href="#">
@@ -99,6 +100,7 @@
                         <u>Vaccination List</u>
                     </h2>
 
+                    <!-- Table for Vaccination List For Pregnant Women -->
                     <h4>Vaccines for Pregnant Women:-</h4>
                     <div class="table-responsive row">
                         <div class="col-md-3"></div>
@@ -123,6 +125,7 @@
                         <div class="col-md-3"></div>
                     </div>
                     <br>
+                    <!-- Table for Vaccination List For Children -->
                     <h4>Vaccines for Children:-</h4>
                     <div class="row">
                         <div class="col-md-2"></div>
@@ -313,13 +316,15 @@
     <script src="js/progress-bar.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript">
-
         /////////////////////////////////////////////////////////////////////////////////////////
         ////////////////// For initializing the google translate dropdown////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////
 
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
         }
     </script>
 </body>

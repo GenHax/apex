@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
     <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <!-- Stylesheet for Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -22,7 +22,7 @@
 <body class="sidebar-mini">
     <div class="container-scroller">
 
-
+        <!-- Top Navbar -->
         <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-left navbar-brand-wrapper">
                 <a class="navbar-brand brand-logo-mini" href="#">
@@ -100,6 +100,7 @@
                             <div class="card">
                                 <div class="card-body">
 
+                                    <!-- Form Registration -->
                                     <form class="forms-sample" id="reg-form">
                                         <div class="row">
                                             <div class="form-group col-sm-12 col-xs-12 col-md-6 col-lg-6">
@@ -223,13 +224,15 @@
     <script src="js/patient_reg.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript">
-
         /////////////////////////////////////////////////////////////////////////////////////////
         ////////////////// For initializing the google translate dropdown////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////
 
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
         }
     </script>
 
