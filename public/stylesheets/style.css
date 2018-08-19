@@ -8473,8 +8473,8 @@ body.avgrund-active {
 .sample-page {
   overflow-x: hidden; }
   .sample-page .landing-section {
-    background: url("../images/assets_landing page/Bg.jpg") repeat;
-    background-size: contain;
+    background: url("../images/assets_landing page/Bgs.jpg") repeat;
+    background-size: cover;
     overflow: hidden; }
     .sample-page .landing-section .container .navbar {
       background: transparent;
