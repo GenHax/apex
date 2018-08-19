@@ -15,8 +15,7 @@
     <link rel="shortcut icon" href="images/favicon.png" />
     <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body class="sidebar-mini">
@@ -151,14 +150,43 @@
                         <div class="col-12 col-md-8">
                             <div class="card">
                                 <div class="card-body">
-                                    <h2 class="card-title">Access keys</h2>
+                                    <h2 class="card-title">Missed Vaccinations</h2>
                                     <br>
                                     <br>
                                     <br>
-                                    <div class="card-body bg-primary text-white" id="context-menu-access">
-                                        <p class="card-text">
-                                            Right click somewhere in this colored area for context menu with action on menu
-                                        </p>
+                                    <div class="card-body  text-white" id="context-menu-access">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr class="">
+                                                        <th>Patient Id</th>
+                                                        <th>Patient Name</th>
+                                                        <th>Contact No.</th>
+                                                        <th>Address</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Anita Desai</td>
+                                                        <td>276840376</td>
+                                                        <td>UP</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Sanjukta Mohapatra</td>
+                                                        <td>7854123698</td>
+                                                        <td>OD</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Meneka Gowda</td>
+                                                        <td>7854123698</td>
+                                                        <td>CG</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -200,13 +228,15 @@
     <script src="js/progress-bar.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript">
-
         /////////////////////////////////////////////////////////////////////////////////////////
         ////////////////// For initializing the google translate dropdown////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////
 
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
         }
     </script>
 </body>
