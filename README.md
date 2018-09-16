@@ -3,7 +3,7 @@ Team "Illuminati" with members- Deepak Senapati, NVS Abhishek, Ramakrishna Pattn
 
 
 ### Project Title
-**PregAssist**
+**Pregnancy awareness application**
 
 ### Project Description
 This web-app focuses on the healthcare of rural women where immediate medical help might be hard to avail.
